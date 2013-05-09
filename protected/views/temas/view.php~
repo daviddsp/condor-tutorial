@@ -1,0 +1,27 @@
+<?php
+$this->breadcrumbs=array(
+	'Temases'=>array('index'),
+	$model->id_tema,
+);
+/*se crea la variable $admin paraque los usuarios con el perfil de administradores puedan tener prioridades que otros usuarios no tendran*/ 
+$admin = (isset(Yii::app()->user->perfil) and Yii::app()->user->perfil == 'A') ? true : false ;
+$this->menu=array(
+	array('label'=>'List Temas','url'=>array('index'),'visible' => $A),
+	array('label'=>'Create Temas','url'=>array('create')),
+	array('label'=>'Update Temas','url'=>array('update','id'=>$model->id_tema)),
+	array('label'=>'Delete Temas','url'=>'#','linkOptions'=>array('submit'=>array('delete','id'=>$model->id_tema),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Temas','url'=>array('admin')),
+);
+?>
+
+<h1>View Temas #<?php echo $model->id_tema; ?></h1>
+
+<?php $this->widget('bootstrap.widgets.TbDetailView',array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id_tema',
+		'nb_tema',
+		'des_temas',
+		'id_usuario',
+	),
+)); ?>
