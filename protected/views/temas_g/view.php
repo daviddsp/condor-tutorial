@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	'Temases'=>array('index'),
+	'Temas'=>array('index'),
 	$model->id_temas,
 );
 
@@ -13,7 +13,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Temas #<?php echo $model->id_temas; ?></h1>
+<h1><?php echo $model->nb_temas; ?></h1>
 
 <?php $this->widget('bootstrap.widgets.TbDetailView',array(
 	'data'=>$model,

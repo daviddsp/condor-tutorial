@@ -85,6 +85,7 @@ class Temas extends CActiveRecord
 		$criteria->compare('id_temas',$this->id_temas);
 		$criteria->compare('nb_temas',$this->nb_temas,true);
 		$criteria->compare('descrip_temas',$this->descrip_temas,true);
+		$criteria->compare('id_lecciones',$this->id_lecciones,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
