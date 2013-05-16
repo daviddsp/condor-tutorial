@@ -18,7 +18,7 @@ $this->menu=array(
 );*/
 ?>
 
-<h1>Temases</h1>
+<h1>Vista de Gestión de Temas</h1>
 
 <?php $this->widget('bootstrap.widgets.TbListView',array(
 	'dataProvider'=>$dataProvider,
