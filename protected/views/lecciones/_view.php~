@@ -5,7 +5,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Nombre del Tema')); ?>:
-	<?php echo CHtml::encode($data->temas->nb_temas); ?>
+	<?php echo CHtml::encode($data->idtemas->nb_temas); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nb_lecciones')); ?>:</b>

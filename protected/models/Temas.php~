@@ -65,9 +65,9 @@ class Temas extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_temas' => 'Id Temas',
-			'nb_temas' => 'Nb Temas',
-			'descrip_temas' => 'Descrip Temas',
+			'id_temas' => 'Identificador del Tema',
+			'nb_temas' => 'Nombre del Tema',
+			'descrip_temas' => 'Descripción del Tema',
 		);
 	}
 

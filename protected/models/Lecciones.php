@@ -57,7 +57,7 @@ class Lecciones extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idTemas' => array(self::BELONGS_TO, 'Temas', 'id_temas'),
+			'temas' => array(self::BELONGS_TO, 'Temas', 'id_temas'),
 			'contenidoses' => array(self::HAS_MANY, 'Contenidos', 'id_lecciones'),
 		);
 	}
@@ -86,8 +86,10 @@ class Lecciones extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_lecciones',$this->id_lecciones);
-		$criteria->compare('id_temas',$this->id_temas);
+		$criteria->with =array('temas');
+		$criteria->addSearchCondition('temas.nb_temas', $this->id_temas);
 		$criteria->compare('nb_lecciones',$this->nb_lecciones,true);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -19,7 +19,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_lecciones',
-		'temas.nb_temas',
+		'Temas.nb_temas',
 		'nb_lecciones',
 	),
 )); ?>
