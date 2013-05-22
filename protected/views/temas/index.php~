@@ -12,13 +12,21 @@ array('label'=>'Create Temas','url'=>array('create')),
 	array('label'=>'Lista de Lecciones','url'=>array('Lecciones/index')),
 ),
 ));
-
+/*
 $this->menu=array(
 	array('label'=>'Create Temas','url'=>array('create')),
 	array('label'=>'Manage Temas','url'=>array('admin')),
 	array('label'=>'Lista de Lecciones','url'=>array('Lecciones/index')),
-);
+);*/
 ?>
+
+<?php    $this->widget('bootstrap.widgets.TbGridView', array(
+    'type'=>'striped bordered condensed',
+    'dataProvider'=>$gridDataProvider,
+    'template'=>"{items}",
+    'filter'=>$person->search(),
+    'columns'=>$gridColumns,
+    ));?>
 
 <h1>Temas</h1>
 

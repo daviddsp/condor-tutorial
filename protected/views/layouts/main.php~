@@ -88,7 +88,7 @@ echo "Último Acceso: ".Yii::app()->dateFormatter->format("d-M-y H:M a", Yii::ap
             alt="¡CUC Logo!" />
 		Colegio Universitario de Caracas - PNFI. <?php echo date('Y'); ?>.<br/>
 		Coordinación de Desarrollo Tecnológico.<br/>
-		Este sitio web está liberado bajo una licencia <a href="http://creativecommons.org/licenses/by/3.0/"target="_blank">Creative Commons Attribution 3.0 License</a>.<br/>
+		Licencia de Creative Commons Reconocimiento-CompartirIgual 3.0 Unported. <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES"><br/>
 		<?php echo Yii::app()->params['adminEmail']?>
 		
 			<article class="herramientas">
@@ -139,6 +139,25 @@ echo "Último Acceso: ".Yii::app()->dateFormatter->format("d-M-y H:M a", Yii::ap
 				<div class="btn-toolbar">
 
 	</article>
+
+
+	<article class="licencia">
+			<!--  <h4 align="right">Encuentranos por las Redes Sociales!!.</h4>-->
+			<aside>
+				<a>
+				<!--<img style="border:1;width:58px;height:58px" align="right"
+            			src="./images/facebook.png"
+            			alt="¡HTML5 Semantica!" />-->
+            
+            			<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES"> <img style="border:1;" align="left"
+            			src="./images/88x31.png"
+            			alt="¡Creative Commons!" Licencia  /><br>
+            		
+			</aside>	
+				<div class="btn-toolbar">
+
+	</article>
+
 
 </div><!-- page -->
 
