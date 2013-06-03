@@ -4,8 +4,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Usuario','url'=>array('create')),
-	array('label'=>'Manage Usuario','url'=>array('admin')),
+	array('label'=>'Crear Usuario','url'=>array('create')),
+	array('label'=>'Gestión de Usuarios','url'=>array('admin')), /* Se le puede agregar la validación para que el usuario que pueda visualizar esto sea el administrador */
 );
 ?>
 
