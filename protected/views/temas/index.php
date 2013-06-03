@@ -1,14 +1,14 @@
 <?php
 $this->breadcrumbs=array(
-	'Temases',
+	'Temas',
 );
 
 
 $this->widget('bootstrap.widgets.TbTabs', array(
 'type'=>'tabs', // 'tabs' or 'pills'
 'tabs'=>array(
-array('label'=>'Create Temas','url'=>array('create')),
-	array('label'=>'Manage Temas','url'=>array('admin')),
+array('label'=>'Crear Temas','url'=>array('create')),
+	array('label'=>'Gestión de Temas','url'=>array('admin')),
 	array('label'=>'Lista de Lecciones','url'=>array('Lecciones/index')),
 ),
 ));
