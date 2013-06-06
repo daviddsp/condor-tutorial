@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 $this->widget('bootstrap.widgets.TbTabs', array(
 'type'=>'tabs', // 'tabs' or 'pills'
 'tabs'=>array(
-array('label'=>'Crear Temas','url'=>array('create')),
+	array('label'=>'Crear Temas','url'=>array('create')),
 	array('label'=>'Gestión de Temas','url'=>array('admin')),
 	array('label'=>'Lista de Lecciones','url'=>array('Lecciones/index')),
 ),
